@@ -32,8 +32,8 @@ public class Event {
 	private LocalDate beginDate;
 	@Column(name="alldays")
 	private Boolean allDays;
-	@OneToOne(cascade=CascadeType.PERSIST)
-	@JoinColumn(name="id", referencedColumnName="fk_address_event")
+	@ManyToOne(cascade=CascadeType.PERSIST)
+	@JoinColumn(name="fk_address_event")
 	private Address address;
 	@ManyToOne(cascade=CascadeType.PERSIST)
 	@JoinColumn(name="fk_creator")

@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import ex2.data.entity.Address;
 import ex2.data.entity.Event;
 import ex2.data.repository.AddressRepository;
 import ex2.data.repository.EventRepository;
